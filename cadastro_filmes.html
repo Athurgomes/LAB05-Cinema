@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a> |
+        <a href="cadastro-filmes.html">Cadastrar Filme</a> |
+        <a href="cadastro-salas.html">Cadastrar Sala</a> |
+        <a href="cadastro-sessoes.html">Cadastrar Sessão</a> |
+        <a href="venda-ingressos.html">Vender Ingresso</a> |
+        <a href="sessoes.html">Sessões Disponíveis</a>
+    </nav>
+    <hr>
+    <h1>Cadastro de Filmes</h1>
+    <form id="form-filme">
+        <div>
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" required> </div>
+        <div>
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" rows="4"></textarea> </div>
+        <div>
+            <label for="genero">Gênero:</label>
+            <select id="genero" required> <option value="">Selecione...</option>
+                <option value="Acao">Ação</option>
+                <option value="Comedia">Comédia</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficcao">Ficção Científica</option>
+                <option value="Terror">Terror</option>
+            </select>
+        </div>
+        <div>
+            <label for="classificacao">Classificação:</label>
+            <select id="classificacao" required> <option value="L">Livre</option>
+                <option value="10">10 anos</option>
+                <option value="12">12 anos</option>
+                <option value="14">14 anos</option>
+                <option value="16">16 anos</option>
+                <option value="18">18 anos</option>
+            </select>
+        </div>
+        <div>
+            <label for="duracao">Duração (min):</label>
+            <input type="number" id="duracao" required> </div>
+        <div>
+            <label for="estreia">Data de Estreia:</label>
+            <input type="date" id="estreia" required> </div>
+        
+        <button type="submit">Salvar Filme</button> </form>
+    
+    <script src="js/storage.js"></script>
+</body>
+</html>
