@@ -7,7 +7,7 @@ function listarSessoes() {
     const filmes = getData('filmes');
     const salas = getData('salas');
     
-    const divLista = document.getElementById('lista-sessoes');
+    const divLista = document.getElementById('lista_sessoes');
     divLista.innerHTML = '';
 
     if (sessoes.length === 0) {
@@ -36,5 +36,5 @@ function listarSessoes() {
 
 
 function comprarIngresso(sessaoId) {
-    window.location.href = `venda-ingressos.html?sessaoId=${sessaoId}`;
+    window.location.href = `venda_ingressos.html?sessaoId=${sessaoId}`;
 }
